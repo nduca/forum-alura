@@ -47,7 +47,7 @@ public class JPAConfiguration {
 	public DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-		dataSource.setUrl("jdbc:mysql://18.228.38.66:3306/alura_forum?useSSL=false");
+		dataSource.setUrl("jdbc:mysql://192.168.50.11:3306/alura_forum?useSSL=false");
 		dataSource.setUsername("alura");
 		dataSource.setPassword("qwerty123");
 		return dataSource;
