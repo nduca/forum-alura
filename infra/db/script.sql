@@ -1,5 +1,8 @@
-DROP DATABASE IF EXISTS `alura_forum`;
 CREATE DATABASE `alura_forum`;
+
+CREATE USER 'alura'@'%' IDENTIFIED BY 'qwerty123';
+
+GRANT SELECT, INSERT, UPDATE, DELETE on `alura_forum`.* TO 'alura'@'%';
 
 USE `alura_forum`;
 
